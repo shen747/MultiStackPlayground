@@ -1,0 +1,43 @@
+@page
+@model UserManagement.API.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="jumbotron bg-primary text-white p-5 rounded">
+    <h1 class="display-4">User Management System</h1>
+    <p class="lead">Welcome to the User Management Admin Dashboard</p>
+    <hr class="my-4">
+    <p>Manage users, view reports, and monitor system activity.</p>
+    <a class="btn btn-light btn-lg" href="/admin/users" role="button">Go to Admin Dashboard</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">User Management</h5>
+                <p class="card-text">View, search, and manage all users in the system with pagination support.</p>
+                <a href="/admin/users" class="btn btn-primary">Manage Users</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">API Endpoints</h5>
+                <p class="card-text">Access REST API endpoints for user registration and data retrieval.</p>
+                <a href="/swagger" class="btn btn-secondary">View API Docs</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">System Status</h5>
+                <p class="card-text">Monitor system health and performance metrics.</p>
+                <a href="#" class="btn btn-info disabled">Coming Soon</a>
+            </div>
+        </div>
+    </div>
+</div>
